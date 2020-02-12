@@ -16,7 +16,7 @@ class EvenIterator:
             raise StopIteration
         self.counter += 1
 
-    def current(self):
+    def chetnyi(self):
         if self.counter < len(self.my_list):
             if (self.counter+1) % 2 == 0:
                 return self.my_list[self.counter]
@@ -29,4 +29,4 @@ while True:
         MY_OBJ.__next__()
     except StopIteration:
         break
-    print(MY_OBJ.current())
+    print(MY_OBJ.chetnyi())
